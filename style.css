@@ -19,4 +19,34 @@
 .dshoeimg{
     width: 50%;
     height:100%;
+
 }
+.dshoedescr{
+    width: 50%;
+    margin-left: 15%;
+}
+.dmain{
+    display: flex;
+    margin: 5% ;
+    
+    
+}
+.dmain p{
+    font-size: large;
+}
+.dsizel1 {
+    display: flex;
+}
+.dsizeOption{
+    height: 40px;
+    width: 65px;
+    border: 0.5px solid rgb(199, 199, 199);
+    text-align: center;
+    
+    margin: auto;
+    border-radius: 6px;
+    
+}
+ .dsizel1 :hover{
+    border: 1px solid black;
+ }
