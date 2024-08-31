@@ -50,3 +50,47 @@
  .dsizel1 :hover{
     border: 1px solid black;
  }
+
+.dbtns{
+    padding: 3%;
+}
+.dbtn{
+    padding: 5%;
+    margin: 2% 0%;
+    width: 95%;
+    font-weight: 600;
+    font-size: medium;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+#datc{
+    background-color: black;
+    color: white;
+}
+#datc :hover{
+    background-color: gray;
+}
+#dfav{
+    background-color: white;
+    
+}
+#favc :hover{
+    border: 1px solid black;
+}
+.spt1{
+    margin-top: 12px;
+    width: 50%;
+}
+.sbtn{
+    width: 97%;
+    padding: 25px 0px 25px 0px;
+    color: white;
+    background-color: black;
+    border-radius: 0px 0px 12px 12px;
+    font-weight: bold;
+    font-size: large;
+    
+}
+.smain{
+    display: flex;
+}
