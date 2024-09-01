@@ -4,6 +4,10 @@
     height: 20%;
     color: white;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 .navitem{
     padding:3% 1.5%;
     justify-content: center;
@@ -93,4 +97,28 @@
 }
 .smain{
     display: flex;
+}
+.sidebar{
+    height: 100%;
+    /* background-color: gray; */
+    
+    width: 20%;
+    border-radius: 0px 12px 12px 0px;
+}
+.fmain{
+    display: flex;
+}
+.sideitem{
+    padding: 28px ;
+    justify-content: center;
+}
+.fline{
+    display: flex;
+}
+.fitem{
+    
+    margin: 5%;
+}
+.fcoll{
+    display: block;
 }
