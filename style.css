@@ -46,14 +46,19 @@ a {
     width: 65px;
     border: 0.5px solid rgb(199, 199, 199);
     text-align: center;
-    
     margin: auto;
     border-radius: 6px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
- .dsizel1 :hover{
-    border: 1px solid black;
- }
+.dsizeOption:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    border: 1px solid black; /* Darker border on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transform: scale(1.05); /* Slightly enlarge the option */
+}
 
 .dbtns{
     padding: 3%;
@@ -116,9 +121,60 @@ a {
     display: flex;
 }
 .fitem{
-    
+    transition: transform 0.3s ease; 
     margin: 5%;
+    width: 30%;
 }
 .fcoll{
     display: block;
 }
+
+
+.fitem:hover {
+    transform: scale(1.1);
+    transition-delay: 0.5s;
+}
+.dmain {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin: 2% 5%; /* Reduced margins to fit narrower screens better */
+}
+
+.dshoedescr {
+    width: 90%; /* Allow more space on narrower screens */
+    margin-left: 5%; /* Center description */
+}
+
+@media (min-width: 1024px) {
+    .dshoedescr {
+        width: 45%; /* Adjust to fit larger screens */
+        margin-left: 5%;
+    }
+
+    .dshoeimg {
+        width: 45%;
+        margin-right: 5%; /* Adjust to fit larger screens */
+    }
+}
+.dmain {
+    display: flex;
+    flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+    margin: 2% 5%; /* Adjust margins for better spacing */
+}
+
+.dshoeimg, .dshoedescr {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+@media (min-width: 768px) {
+    .dshoeimg, .dshoedescr {
+        width: 48%; /* Side-by-side on larger screens */
+        margin: 0;
+    }
+
+    .dshoedescr {
+        margin-left: 4%;
+    }
+}
+
