@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe Cart</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    margin: 0;
+   margin: 0;
     padding: 0;
     color: #333;
 }
@@ -109,11 +109,107 @@
 .summary .checkout:hover {
     background-color: #333;
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .bag, .summary {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .size-quantity {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .summary {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bag h1, .summary h1 {
+        font-size: 20px;
+    }
+
+    .summary p {
+        font-size: 16px;
+    }
+
+    .summary .checkout {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .item-actions button {
+        font-size: 20px;
+    }
+}
 
 
 </style>
 <body>
-    <div class="container">
+    
+        <div class="navbar">
+            <div class="navitem">LOGO</div>
+            <div class="navitem"><a href="index.html" style="text-decoration: none; color: white;">HOME</a></div>
+    
+            <div class="navitem"><a href="sports.html" style="text-decoration: none; color: white;">SPORTS </a></div>
+            <div class="navitem"><a href="collections.html"  style="text-decoration: none; color: white;">COLLECTIONS</a></div>
+            <div class="navitem"><a href="collections.html"  style="text-decoration: none; color: white;">FEATURED</a></div>
+            
+            <div class="navitem">ABOUT US</div>
+            <div class="navitem"><a href="login.html" style="text-decoration: none; color: white;">LOGIN </a></div>
+          
+            <div class="navitem" style="margin-left: auto; position: relative;" >
+                <input type="text" 
+                       placeholder="Search..." 
+                       style="
+                         width: 0; 
+                         padding: 10px 30px; 
+                         border: 2px solid #ddd; 
+                         border-radius: 30px; 
+                         outline: none; 
+                         font-size: 16px; 
+                         color: #333; 
+                         background-color: white;
+                         transition: width 0.4s ease, border-color 0.4s ease;
+                         position: absolute;
+                         top: 50%;
+                         right: 10px;
+                         transform: translateY(-50%);
+                         z-index: 20;
+                       "
+                       onfocus="this.style.width='200px'; this.style.borderColor='#007BFF';"
+                       onblur="this.style.width='0'; this.style.borderColor='#ddd';"
+                />
+                <i class="fas fa-search" 
+                   style="
+                     position: absolute; 
+                     right: 15px; 
+                     top: 50%; 
+                     transform: translateY(-50%); 
+                     color: #888;
+                     pointer-events: none;
+                   ">
+                </i>
+            </div>
+        </div>
+        <div class="container">
+        
         <div class="bag">
             <h1>Bag</h1>
             <div class="item">
